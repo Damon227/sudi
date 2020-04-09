@@ -81,6 +81,12 @@ Page({
         phoneNo: this.data.phoneNo,
         region: this.data.region,
         address: this.data.address
+      },
+      success: function(res){
+        wx.showToast({
+          title: '添加成功',
+          icon: 'none'
+        })
       }
     })
   }

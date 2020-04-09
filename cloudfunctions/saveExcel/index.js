@@ -9,12 +9,13 @@ exports.main = async (event, context) => {
     console.log(11);
     const wxContext = cloud.getWXContext()
     const xlsx = require('node-xlsx');
-
+    
     let xlsxObj = [
-      ['id', 'name'],
-      ['1', 'jack'],
-      ['2', 'rose']
+      ['总监昵称', '收件人', '电话', '地区', '详细地址']
     ];
+    event.infos.map(function (value, index, array) {
+      xlsxObj.push([value.name, value.addressee, value.phoneNo, value.region, value.address])
+    })
 
     var buffer = xlsx.build([{
       name: "mySheet",
