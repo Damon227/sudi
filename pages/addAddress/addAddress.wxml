@@ -1,0 +1,32 @@
+<view class="container">
+	<form bindsubmit="submit" class="form">
+		<view class="row">
+			<image src="../../img/p1.jpg" class="img"></image>
+		</view>
+		<view class="row">
+			<span class="leftTitle"><label class="redstar">*</label>总监昵称：</span>
+			<input class="inputStyle"  bindinput="nameInput"></input>
+		</view>
+		<view class="row">
+			<span class="leftTitle"><label class="redstar">*</label>收件人：</span>
+			<input class="inputStyle" bindinput="addresseeInput"></input>
+		</view>
+		<view class="row">
+			<span class="leftTitle"><label class="redstar">*</label>电话：</span>
+			<input class="inputStyle" bindinput="phoneNoInput"></input>
+		</view>
+		<view class="section row">
+			<span class="leftTitle"><label class="redstar">*</label>地区：</span>
+			<picker class="inputStyle" mode="region" bindchange="bindRegionChange" value="{{region}}">
+				<view class="picker">
+					{{region[0]}}，{{region[1]}}，{{region[2]}}
+				</view>
+			</picker>
+		</view>
+		<view class="row">
+			<span class="leftTitle"><label class="redstar">*</label>详细地址：</span>
+			<input class="inputStyle" bindinput="addressInput"></input>
+		</view>
+		<button formType="submit" class="savebtn">保存</button>
+	</form>
+</view>

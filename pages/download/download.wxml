@@ -1,0 +1,11 @@
+<view class="container">
+	<form bindsubmit="submit" class="form">
+		<view class="row">
+			<span class="title">导出码：</span>
+			<input class="input" bindinput="codeInput"></input>
+		</view>
+		<view>
+			<button class="btn" formType="submit">导出</button>
+		</view>
+	</form>
+</view>
