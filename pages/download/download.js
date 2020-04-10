@@ -22,10 +22,6 @@ Page({
       title: '数据处理中...',
     })
 
-    setTimeout(function () {
-      wx.hideLoading()
-    }, 3000)
-
     wx.cloud.init({
       env: 'ycm20200408-8nr0y'
     });
@@ -48,7 +44,7 @@ Page({
                   // 返回临时文件路径
                   wx.getFileSystemManager().saveFile({
                     tempFilePath: res2.tempFilePath,
-                    filePath: wx.env.USER_DATA_PATH + '/abcde.xlsx',
+                    filePath: wx.env.USER_DATA_PATH + '/' + Date.parse(new Date()) + '.xlsx',
                     success: res3 => {
                       wx.hideLoading()
                       wx.openDocument({

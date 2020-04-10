@@ -1,19 +1,19 @@
 <view class="container">
 	<form bindsubmit="submit" class="form">
-		<view class="row">
+		<view class="row" style="padding-bottom: 20px;">
 			<image src="../../img/p1.jpg" class="img"></image>
 		</view>
 		<view class="row">
 			<span class="leftTitle"><label class="redstar">*</label>总监昵称：</span>
-			<input class="inputStyle"  bindinput="nameInput"></input>
+			<input class="inputStyle" bindinput="nameInput" value="{{name}}" placeholder="请输入总监昵称"></input>
 		</view>
 		<view class="row">
 			<span class="leftTitle"><label class="redstar">*</label>收件人：</span>
-			<input class="inputStyle" bindinput="addresseeInput"></input>
+			<input class="inputStyle" bindinput="addresseeInput" value="{{addressee}}" placeholder="请输入收件人"></input>
 		</view>
 		<view class="row">
 			<span class="leftTitle"><label class="redstar">*</label>电话：</span>
-			<input class="inputStyle" bindinput="phoneNoInput"></input>
+			<input class="inputStyle" bindinput="phoneNoInput" value="{{phoneNo}}" placeholder="请输入电话"></input>
 		</view>
 		<view class="section row">
 			<span class="leftTitle"><label class="redstar">*</label>地区：</span>
@@ -25,8 +25,10 @@
 		</view>
 		<view class="row">
 			<span class="leftTitle"><label class="redstar">*</label>详细地址：</span>
-			<input class="inputStyle" bindinput="addressInput"></input>
+			<input class="inputStyle" bindinput="addressInput" value="{{address}}" placeholder="请输入详细地址"></input>
 		</view>
-		<button formType="submit" class="savebtn">保存</button>
+		<view class="btnrow">
+			<button formType="submit" class="savebtn">保存</button>
+		</view>
 	</form>
 </view>

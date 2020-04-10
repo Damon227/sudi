@@ -83,11 +83,19 @@ Page({
         address: this.data.address
       },
       success: function(res){
+        
         wx.showToast({
           title: '添加成功',
           icon: 'none'
         })
       }
+    })
+
+    this.setData({
+      name: '',
+      addressee: '',
+      phoneNo: '',
+      address: ''
     })
   }
 })

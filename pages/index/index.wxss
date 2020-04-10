@@ -20,8 +20,25 @@
   margin-top: 200px;
 }
 
-.menu{
+.content {
+  align-items: center;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.row{
+  display: flex;
+  padding: 0 10px;
+}
+
+.menu {
   background-color: #36B2B2;
   color: #FFFFFF;
   margin-top: 20px;
+}
+
+button{
+  width: 100% !important;
 }

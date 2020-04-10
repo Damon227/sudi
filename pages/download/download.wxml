@@ -4,7 +4,7 @@
 			<span class="title">导出码：</span>
 			<input class="input" bindinput="codeInput"></input>
 		</view>
-		<view>
+		<view class="row">
 			<button class="btn" formType="submit">导出</button>
 		</view>
 	</form>

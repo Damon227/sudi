@@ -10,8 +10,12 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view> -->
-  <view>
-    <button class="menu" bindtap="goToAddAddress">填写收货地址</button>
-     <button class="menu" bindtap="goTodownload">导出收货地址</button>
-  </view>
+	<view class="content">
+		<view class="row">
+			<button class="menu" bindtap="goToAddAddress">填写收货地址</button>
+		</view>
+		<view class="row">
+			<button class="menu" bindtap="goTodownload">导出收货地址</button>
+		</view>
+	</view>
 </view>

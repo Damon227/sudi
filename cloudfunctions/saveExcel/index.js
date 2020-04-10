@@ -6,7 +6,7 @@ cloud.init()
 // 云函数入口函数
 exports.main = async (event, context) => {
   try {
-    console.log(11);
+  
     const wxContext = cloud.getWXContext()
     const xlsx = require('node-xlsx');
     
@@ -23,7 +23,7 @@ exports.main = async (event, context) => {
     }])
 
     return await cloud.uploadFile({
-      cloudPath: 'demo.xlsx',
+      cloudPath: Date.parse(new Date()) + '.xlsx',
       fileContent: buffer,
     })
 
